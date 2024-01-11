@@ -7,100 +7,127 @@ using System.Data.SqlClient;
 
 namespace RAPI.Controllers
 {
-   
+
     [Route("api")]
     [ApiController]
     public class WeatherForecastController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly log logger;
 
         public WeatherForecastController(IConfiguration configuration)
         {
             _configuration = configuration;
+            logger = new log();
+            logger.Info("kontroler API-a instanciran");
         }
-        //String connStr = "Data Source=PELENOV;Initial Catalog=omegalo;Integrated Security=True;UID=sa;PWD=sasa";
         [HttpGet("DajKorisnika", Name = "DajKorisnika")]
         public String Post(string ime, string lozinka)
         {
             String odgovor;
-            //String connStr;
-            string connStr = _configuration.GetConnectionString("DefaultConnection");
-            //connStr = "Data Source=PELENOV;Initial Catalog=omegalo;Integrated Security=True;UID=sa;PWD=sasa";
-            //String connectionString = "Data Source=LENOPED;Initial Catalog=PH-front;Integrated Security=True";
-            using (SqlConnection connection = new SqlConnection(connStr))
+            try
             {
 
-                connection.Open();
-                using (SqlCommand command = new SqlCommand("select * From Korisnik Where Korisnik=@ime and Lozinka=@lozinka", connection))
+                logger.Info($"DajKorisnika pozvan sa ime: {ime} lozina: {lozinka}");
+                string connStr = _configuration.GetConnectionString("DefaultConnection");
+                //connStr = "Data Source=PELENOV;Initial Catalog=omegalo;Integrated Security=True;UID=sa;PWD=sasa";
+                //String connectionString = "Data Source=LENOPED;Initial Catalog=PH-front;Integrated Security=True";
+                using (SqlConnection connection = new SqlConnection(connStr))
                 {
-                    command.Parameters.AddWithValue("@ime", ime);
-                    command.Parameters.AddWithValue("@lozinka", lozinka);
+                    logger.Info("Pokušaj otvaranja veze sa bazom podataka");
+                    connection.Open();
+                    if (connection.State == ConnectionState.Open)
+                        logger.Info("Veza sa bazom podataka je uspešno otvorena");
+                    else
+                        logger.Error("Otvaranje veze sa bazom podataka nije uspelo");
 
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    using (SqlCommand command = new SqlCommand("select * From Korisnik Where Korisnik=@ime and Lozinka=@lozinka", connection))
                     {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-
-                        odgovor = dt.Rows.Count == 0 ? "NE" : "DA";
+                        command.Parameters.AddWithValue("@ime", ime);
+                        command.Parameters.AddWithValue("@lozinka", lozinka);
+                        logger.Debug($"Izvršena SQL komanda: select * From Korisnik Where Korisnik={ime} and Lozinka={lozinka}");
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+                            logger.Info($"SQL komanda izvršena.  pronaðenih redova: {dt.Rows.Count}");
+                            odgovor = dt.Rows.Count == 0 ? "NE" : "DA";
+                        }
                     }
+                    logger.Info("Zatvorena konekcija sa bazom podataka");
+                    connection.Close();
                 }
-                connection.Close();
+                logger.Info($"Post metoda uspešno izvršena vraæen odgovor={odgovor}");
+                return odgovor;
+
             }
-            return odgovor;
+            catch (Exception ex)
+            {
+                logger.Error($"greške u Post: {ex.Message}");
+                return "Dogodila se greška";
+            }
         }
 
         [HttpGet("Art", Name = "DajArtikle")]
         public List<Artikli> DajArt()
         {
-            List<Artikli> artikli = new List<Artikli>();
-            string connStr = _configuration.GetConnectionString("DefaultConnection");
-
-            using (SqlConnection connection = new SqlConnection(connStr))
+            try
             {
-                connection.Open();
-                string artQuery = "Select Artikal as IID, Naziv, PTCena as Cena From vStavkaCTC Where Artikal <> '' And CenovnikTC in (Select CenovnikTC from CenovnikTC Where opis='WEB')";
+                List<Artikli> artikli = new List<Artikli>();
+                string connStr = _configuration.GetConnectionString("DefaultConnection");
 
-                using (SqlCommand command = new SqlCommand(artQuery, connection))
+                using (SqlConnection connection = new SqlConnection(connStr))
                 {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    connection.Open();
+                    string artQuery = "Select Artikal as IID, Naziv, PTCena as Cena From vStavkaCTC Where Artikal <> '' And CenovnikTC in (Select CenovnikTC from CenovnikTC Where opis='WEB')";
+
+                    using (SqlCommand command = new SqlCommand(artQuery, connection))
                     {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-
-                        if (dt.Rows.Count > 0)
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                         {
-                            foreach (DataRow row in dt.Rows)
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+
+                            if (dt.Rows.Count > 0)
                             {
-                                Artikli art = new Artikli
+                                foreach (DataRow row in dt.Rows)
                                 {
-                                    IID = row["IID"].ToString(),
-                                    Naziv = row["Naziv"].ToString(),
-                                    Cena = row["Cena"].ToString()
-                                };
-
-                                string stockQuery = "Select Stanje From Stanje Where Artikal = @artikal And Objekat = '001'";
-                                using (SqlCommand stockCommand = new SqlCommand(stockQuery, connection))
-                                {
-                                    stockCommand.Parameters.AddWithValue("@artikal", art.IID);
-
-                                    using (SqlDataAdapter stockAdapter = new SqlDataAdapter(stockCommand))
+                                    Artikli art = new Artikli
                                     {
-                                        DataTable stockDt = new DataTable();
-                                        stockAdapter.Fill(stockDt);
+                                        IID = row["IID"].ToString(),
+                                        Naziv = row["Naziv"].ToString(),
+                                        Cena = row["Cena"].ToString()
+                                    };
 
-                                        art.Kolicina = stockDt.Rows.Count > 0 ? stockDt.Rows[0]["Stanje"].ToString() : "0";
+                                    string stockQuery = "Select Stanje From Stanje Where Artikal = @artikal And Objekat = '001'";
+                                    using (SqlCommand stockCommand = new SqlCommand(stockQuery, connection))
+                                    {
+                                        stockCommand.Parameters.AddWithValue("@artikal", art.IID);
+
+                                        using (SqlDataAdapter stockAdapter = new SqlDataAdapter(stockCommand))
+                                        {
+                                            DataTable stockDt = new DataTable();
+                                            stockAdapter.Fill(stockDt);
+
+                                            art.Kolicina = stockDt.Rows.Count > 0 ? stockDt.Rows[0]["Stanje"].ToString() : "0";
+                                        }
                                     }
-                                }
 
-                                artikli.Add(art);
+                                    artikli.Add(art);
+                                }
                             }
                         }
                     }
+                    connection.Close();
                 }
-                connection.Close();
+                return artikli;
             }
-            return artikli;
-        }
+            catch (Exception ex)
+            {
+                logger.Error($"Error in Post: {ex.Message}");
+                return null;
+            }
 
+        }
     }
 }
