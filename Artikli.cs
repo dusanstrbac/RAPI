@@ -2,10 +2,10 @@
 {
     public class Artikli
     {
-        public string IID { get; set; }
-        public string Naziv { get; set; }
+        public ulong id { get; set; }
+        public string name { get; set; }
 
-        public string Cena { get; set; }
+        public decimal? regular_price { get; set; }
 
         public string Kolicina { get; set; }
     }

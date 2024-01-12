@@ -94,15 +94,15 @@ namespace RAPI.Controllers
                                 {
                                     Artikli art = new Artikli
                                     {
-                                        IID = row["IID"].ToString(),
-                                        Naziv = row["Naziv"].ToString(),
-                                        Cena = row["Cena"].ToString()
+                                        id = Convert.ToUInt64(row["IID"].ToString()),
+                                        name = row["Naziv"].ToString(),
+                                        regular_price = Convert.ToDecimal(row["Cena"])
                                     };
 
                                     string stockQuery = "Select Stanje From Stanje Where Artikal = @artikal And Objekat = '001'";
                                     using (SqlCommand stockCommand = new SqlCommand(stockQuery, connection))
                                     {
-                                        stockCommand.Parameters.AddWithValue("@artikal", art.IID);
+                                        stockCommand.Parameters.AddWithValue("@artikal", art.id);
 
                                         using (SqlDataAdapter stockAdapter = new SqlDataAdapter(stockCommand))
                                         {
@@ -128,6 +128,99 @@ namespace RAPI.Controllers
                 return null;
             }
 
+        }
+
+        [HttpGet("DajPartnera")]
+
+        public IActionResult DajPartnera(string sifra = null, string maticnibroj = null, string pib = null)
+        {
+            {
+                try
+                {
+                    Partner partner = new Partner();
+                    string connStr = _configuration.GetConnectionString("DefaultConnection");
+
+                    using (SqlConnection connection = new SqlConnection(connStr))
+                    {
+                        connection.Open();
+                        string artQuery = "Select Partner, Naziv, Adresa, MaticniBroj, PIB From Partner Where (@sifra IS NULL OR Partner = @sifra) AND (@maticnibroj IS NULL OR MaticniBroj = @maticnibroj) AND (@pib IS NULL OR PIB = @pib)";
+
+                        using (SqlCommand command = new SqlCommand(artQuery, connection))
+                        {
+                            command.Parameters.AddWithValue("@sifra", (object)sifra ?? DBNull.Value);
+                            command.Parameters.AddWithValue("@maticnibroj", (object)maticnibroj ?? DBNull.Value);
+                            command.Parameters.AddWithValue("@pib", (object)pib ?? DBNull.Value);
+
+                            using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                            {
+                                DataTable dt = new DataTable();
+                                adapter.Fill(dt);
+
+                                if (dt.Rows.Count > 0)
+                                {
+                                    partner.sifra = dt.Rows[0]["Partner"].ToString();
+                                    partner.naziv = dt.Rows[0]["Naziv"].ToString();
+                                    partner.adresa = dt.Rows[0]["Adresa"].ToString();
+                                    partner.maticnibroj = dt.Rows[0]["MaticniBroj"].ToString();
+                                    partner.pib = dt.Rows[0]["PIB"].ToString();
+                                }
+                                else
+                                {
+                                    return NotFound("Partner nije pronaðen.");
+                                }
+                            }
+                        }
+                        connection.Close();
+                    }
+                    return Ok(partner);
+                }
+                catch (Exception ex)
+                {
+                    logger.Error($"Error in Post: {ex.Message}");
+                    return null;
+                }
+            }
+
+        }
+
+        [HttpPost("DodajPartnera")]
+        public IActionResult DodajPartnera(string sifra, string naziv, string adresa, string maticnibroj, string pib)
+        {
+            try
+            {
+                string connStr = _configuration.GetConnectionString("DefaultConnection");
+
+                using (SqlConnection connection = new SqlConnection(connStr))
+                {
+                    connection.Open();
+                    string insertQuery = "INSERT INTO Partner (Partner, Naziv, Adresa, MaticniBroj, PIB) VALUES (@sifra, @naziv, @adresa, @maticnibroj, @pib)";
+
+                    using (SqlCommand command = new SqlCommand(insertQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@sifra", sifra);
+                        command.Parameters.AddWithValue("@naziv", naziv);
+                        command.Parameters.AddWithValue("@adresa", adresa);
+                        command.Parameters.AddWithValue("@maticnibroj", maticnibroj);
+                        command.Parameters.AddWithValue("@pib", pib);
+
+                        int result = command.ExecuteNonQuery();
+
+                        if (result > 0)
+                        {
+                            return Ok("Partner uspešno dodat.");
+                        }
+                        else
+                        {
+                            return BadRequest("Nije moguæe dodati partnera.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.Error($"Error in Post: {ex.Message}");
+                return StatusCode(500, "Interni server error. Došlo je do greške prilikom obrade zahteva.");
+            }
         }
     }
 }
