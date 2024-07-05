@@ -1,9 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.Data.SqlClient.Server;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq.Expressions;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace RAPI.Controllers
 {
@@ -22,7 +25,7 @@ namespace RAPI.Controllers
             logger.Info("kontroler API-a instanciran");
         }
         [HttpGet("DajKorisnika", Name = "DajKorisnika")]
-        public String Post(string ime, string lozinka)
+        public String DajKorisnika(string ime, string lozinka)
         {
             String odgovor;
             try
@@ -69,8 +72,11 @@ namespace RAPI.Controllers
         }
 
         [HttpGet("Art", Name = "DajArtikle")]
-        public List<Artikli> DajArt()
+        public List<Artikli> DajArt(string partner)
         {
+            string klasa = "";
+            string tip = "";
+            string[] ar;
             try
             {
                 List<Artikli> artikli = new List<Artikli>();
@@ -79,14 +85,30 @@ namespace RAPI.Controllers
                 using (SqlConnection connection = new SqlConnection(connStr))
                 {
                     connection.Open();
-                    string artQuery = "Select Artikal as IID, Naziv, PTCena as Cena From vStavkaCTC Where Artikal <> '' And CenovnikTC in (Select CenovnikTC from CenovnikTC Where opis='WEB')";
+                    string artQuery = "Select dbo.zrdesc(Var,'ExtPK') From Partner Where Partner='" + partner + "'";
+                    using (SqlCommand command = new SqlCommand(artQuery, connection))
+                    {
+                        klasa = command.ExecuteScalar().ToString();
+                    }
 
+                    if (klasa == "")
+                    {
+                        connection.Close();
+                        return null;
+                    }
+                    ar = klasa.Split(",");
+                    tip = ar[0];
+                    klasa = ar[1];
+                    if (tip == "" | klasa == "")
+                        return null;
+                    artQuery = " Select Artikal.Artikal as IID,Artikal.Naziv as Naziv, 0 as Cena From Artikal INNER JOIN StavkaAK ON Artikal.Artikal = StavkaAK.Artikal Where Artikal.Artikal IN(Select Artikal From StavkaAK Where TipKlas = '" + tip + "' And Klas = '" + klasa + "') And StavkaAK.TipKlas = '" + tip + "' And StavkaAK.Klas = '" + klasa + "' Order By Artikal.Artikal";
                     using (SqlCommand command = new SqlCommand(artQuery, connection))
                     {
                         using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                         {
                             DataTable dt = new DataTable();
                             adapter.Fill(dt);
+
 
                             if (dt.Rows.Count > 0)
                             {
@@ -99,11 +121,9 @@ namespace RAPI.Controllers
                                         regular_price = Convert.ToDecimal(row["Cena"])
                                     };
 
-                                    string stockQuery = "Select Stanje From Stanje Where Artikal = @artikal And Objekat = '001'";
+                                    string stockQuery = "Select Stanje From Stanje Where Artikal ='" + art.id + "' And Objekat = '001'";
                                     using (SqlCommand stockCommand = new SqlCommand(stockQuery, connection))
                                     {
-                                        stockCommand.Parameters.AddWithValue("@artikal", art.id);
-
                                         using (SqlDataAdapter stockAdapter = new SqlDataAdapter(stockCommand))
                                         {
                                             DataTable stockDt = new DataTable();
@@ -142,14 +162,27 @@ namespace RAPI.Controllers
 
                     using (SqlConnection connection = new SqlConnection(connStr))
                     {
+                        string sWhere = "";
+                        if (sifra != null)
+                            sWhere = "Partner='" + sifra + "'";
+                        else
+                            if (pib != null)
+                            sWhere = "PIB='" + pib + "'";
+                        else
+                                if (maticnibroj != null)
+                            sWhere = "MaticniBroj='" + maticnibroj + "'";
+
+                        if (sWhere == "")
+                            return NotFound("Partner nije pronaðen.");
+
                         connection.Open();
-                        string artQuery = "Select Partner, Naziv, Adresa, MaticniBroj, PIB From Partner Where (@sifra IS NULL OR Partner = @sifra) AND (@maticnibroj IS NULL OR MaticniBroj = @maticnibroj) AND (@pib IS NULL OR PIB = @pib)";
+                        string artQuery = "Select Partner, Naziv, Adresa, MaticniBroj, PIB From Partner Where " + sWhere;
 
                         using (SqlCommand command = new SqlCommand(artQuery, connection))
                         {
-                            command.Parameters.AddWithValue("@sifra", (object)sifra ?? DBNull.Value);
-                            command.Parameters.AddWithValue("@maticnibroj", (object)maticnibroj ?? DBNull.Value);
-                            command.Parameters.AddWithValue("@pib", (object)pib ?? DBNull.Value);
+                            //command.Parameters.AddWithValue("@sifra", (object)sifra ?? DBNull.Value);
+                            //command.Parameters.AddWithValue("@maticnibroj", (object)maticnibroj ?? DBNull.Value);
+                            //command.Parameters.AddWithValue("@pib", (object)pib ?? DBNull.Value);
 
                             using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                             {
@@ -164,10 +197,11 @@ namespace RAPI.Controllers
                                     partner.maticnibroj = dt.Rows[0]["MaticniBroj"].ToString();
                                     partner.pib = dt.Rows[0]["PIB"].ToString();
                                 }
-                                else
-                                {
-                                    return NotFound("Partner nije pronaðen.");
-                                }
+                                //else
+                                //{
+                                //    connection.Close();
+                                //    return Ok("Klijent ne postoji");
+                                //}
                             }
                         }
                         connection.Close();
@@ -222,5 +256,149 @@ namespace RAPI.Controllers
                 return StatusCode(500, "Interni server error. Došlo je do greške prilikom obrade zahteva.");
             }
         }
+
+        [HttpPost("DodajDokument")]
+        public Int64 DodajDokument(string tip, string partner)
+        {
+            Int64 IIDN = 0;
+            Int64 IIDD = 0;
+            Int64 result = 0;
+            int i = 0;
+            string myTip = "15";
+            string myObjekat = "NI01";
+            string myVrsta = "02";
+            SqlCommand comm;
+            try
+            {
+                string connStr = _configuration.GetConnectionString("DefaultConnection");
+
+                using (SqlConnection connection = new SqlConnection(connStr))
+                {
+                    connection.Open();
+                    string insertQuery = "Select IID from Nalog Where Vrsta='002' and status='' and Datum='" + DateTime.Now.ToString("yyyy-MM-dd") + "'";
+
+                        comm=new SqlCommand(insertQuery,connection);
+                        var odgovor = comm.ExecuteScalar();
+                        if (odgovor == null)
+                        {
+                            insertQuery = "Select Min(IID) from Nalog";
+                            comm = new SqlCommand(insertQuery, connection);
+                            result = Convert.ToInt64(comm.ExecuteScalar().ToString());
+                            if (result > 0)
+                                result = 0;
+
+                            IIDN = result;
+                            for (i = 1; i < 10; i++)
+                            {
+                                IIDN = IIDN - i;
+                                insertQuery = "Insert into Nalog(IID,Vlasnik,Ord,Korak,Vrsta,Datum,Opis) ";
+                                insertQuery = insertQuery + "Values(" + IIDN + ",'01',1024,1024,'002','" + DateTime.Now.ToString("yyyy-MM-dd") + "','WEB')";
+                                comm = new SqlCommand(insertQuery, connection);
+                                try
+                                {
+                                    comm.ExecuteNonQuery();
+                                    result = IIDN;
+                                    break;
+                                }
+                                catch (Exception ex)
+                                {
+                                    if (i == 10)
+                                        return 0;
+                                }
+                            }
+
+
+                        }
+                        else
+                            result = Convert.ToInt64(odgovor.ToString());
+
+                        IIDN = result;
+                        //dodaj dokument i vrati iiddokumenta
+                        insertQuery = "Select Min(IID) from Dokument";
+                        comm = new SqlCommand(insertQuery, connection);
+                        result = Convert.ToInt64(comm.ExecuteScalar().ToString());
+                        IIDD = result;
+                        for (i = 1; i < 10; i++)
+                        {
+                            IIDD = IIDD - i;
+                            insertQuery = "Insert into Dokument(IID,IIDNaloga,Ord,Korak,Vrsta,Datum,Opis,Tip,Partner,Objekat) ";
+                            insertQuery = insertQuery + "Values(" + IIDD + "," + IIDN + ",1024,1024,'" + myVrsta + "','" + DateTime.Now.ToString("yyyy-MM-dd") + "','WEB','" + myTip + "','" + partner + "','" + myObjekat + "')";
+                            comm = new SqlCommand(insertQuery, connection);
+                            try
+                            {
+                                comm.ExecuteNonQuery();
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                if (i == 10)
+                                    return 0;
+                            }
+                        }
+
+                        return IIDD;
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.Error($"Error in Post: {ex.Message}");
+                return 0;
+            }
+        }
+        [HttpPost("DodajStavku")]
+        public Int64 DodajSavku(ulong iidD, ulong artikal, double kolicina)
+        {
+            int i = 0;
+            Int64 j = 0;
+            SqlCommand comm;
+            try
+            {
+                string connStr = _configuration.GetConnectionString("DefaultConnection");
+
+                using (SqlConnection connection = new SqlConnection(connStr))
+                {
+                    connection.Open();
+                    string insertQuery = "Select  count(*) from RMStavka Where iiddokumenta=" + iidD;
+
+                    comm = new SqlCommand(insertQuery, connection);
+                    j = Convert.ToInt64(comm.ExecuteScalar().ToString());
+
+
+                    insertQuery = "Select Min(IID) from RMStavka";
+                    comm = new SqlCommand(insertQuery, connection);
+                    Int64 result = Convert.ToInt64(comm.ExecuteScalar().ToString());
+                    if (result > 0)
+                            result = 0;
+
+                        for (i = 1; i < 10; i++)
+                        {
+                            result = result - 1;
+                            insertQuery = "Insert into RMStavka(IID,IIDDokumenta,Ord,Korak,Artikal,Kolicina) ";
+                            insertQuery = insertQuery + "Values(" + result + "," + iidD + ",1024," + j * 1024 + ",'" + artikal + "'," + kolicina + ")";
+                            comm = new SqlCommand(insertQuery, connection);
+                            try
+                            {
+                                comm.ExecuteNonQuery();
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                if (i == 10)
+                                    return 0;
+                            }
+                        }
+
+
+                        return result;
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.Error($"Error in Post: {ex.Message}");
+                return 0;
+            }
+        }
+
     }
 }

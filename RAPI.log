@@ -1,0 +1,705 @@
+﻿2024-01-12 11:36:34.571 RAPI.log is created.
+2024-01-12 11:36:34.577 [INFO]    kontroler API-a instanciran
+2024-01-12 11:36:34.828 [INFO]    DajKorisnika pozvan sa ime: bobana lozina: bobana
+2024-01-12 11:36:34.864 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-12 11:36:35.198 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-12 11:36:35.206 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=bobana and Lozinka=bobana
+2024-01-12 11:36:35.321 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-12 11:36:35.322 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-12 11:36:35.326 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-12 11:37:19.399 [INFO]    kontroler API-a instanciran
+2024-01-12 11:37:19.511 [ERROR]   Error in Post: Invalid column name 'Sifra'.
+Invalid column name 'Sifra'.
+2024-01-12 11:42:13.556 [INFO]    kontroler API-a instanciran
+2024-01-12 11:42:43.658 [ERROR]   Error in Post: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2024-01-12 11:53:21.299 [INFO]    kontroler API-a instanciran
+2024-01-12 11:53:21.376 [INFO]    DajKorisnika pozvan sa ime: bobana lozina: bobana
+2024-01-12 11:53:21.394 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-12 11:53:21.554 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-12 11:53:21.558 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=bobana and Lozinka=bobana
+2024-01-12 11:53:21.621 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-12 11:53:21.622 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-12 11:53:21.625 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-12 11:53:40.751 [INFO]    kontroler API-a instanciran
+2024-01-12 11:53:40.875 [ERROR]   Error in Post: Invalid column name 'Sifra'.
+Invalid column name 'Sifra'.
+2024-01-12 11:56:31.997 [INFO]    kontroler API-a instanciran
+2024-01-12 11:56:32.059 [INFO]    DajKorisnika pozvan sa ime: bobana lozina: bobana
+2024-01-12 11:56:32.076 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-12 11:56:32.241 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-12 11:56:32.246 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=bobana and Lozinka=bobana
+2024-01-12 11:56:32.308 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-12 11:56:32.309 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-12 11:56:32.313 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-12 11:56:52.626 [INFO]    kontroler API-a instanciran
+2024-01-12 11:56:52.745 [ERROR]   Error in Post: Invalid column name 'Sifra'.
+Invalid column name 'Sifra'.
+2024-01-12 12:11:40.753 [INFO]    kontroler API-a instanciran
+2024-01-12 12:11:40.802 [INFO]    DajKorisnika pozvan sa ime: bobana lozina: bobana
+2024-01-12 12:11:40.813 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-12 12:11:40.954 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-12 12:11:40.959 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=bobana and Lozinka=bobana
+2024-01-12 12:11:41.010 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-12 12:11:41.011 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-12 12:11:41.015 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-12 12:11:47.811 [INFO]    kontroler API-a instanciran
+2024-01-12 12:12:20.675 [INFO]    kontroler API-a instanciran
+2024-01-12 12:12:37.624 [INFO]    kontroler API-a instanciran
+2024-01-12 12:19:24.018 [INFO]    kontroler API-a instanciran
+2024-01-12 12:19:24.078 [INFO]    DajKorisnika pozvan sa ime: bobana lozina: bobana
+2024-01-12 12:19:24.094 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-12 12:19:24.262 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-12 12:19:24.265 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=bobana and Lozinka=bobana
+2024-01-12 12:19:24.314 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-12 12:19:24.315 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-12 12:19:24.318 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-12 12:21:07.775 [INFO]    kontroler API-a instanciran
+2024-01-12 12:21:07.961 [ERROR]   Error in Post: String or binary data would be truncated.
+The statement has been terminated.
+2024-01-12 12:25:49.968 [INFO]    kontroler API-a instanciran
+2024-01-12 14:07:49.052 [INFO]    kontroler API-a instanciran
+2024-01-16 22:29:15.025 [INFO]    kontroler API-a instanciran
+2024-01-16 22:29:16.310 [ERROR]   Error in Post: The parameter data type of UInt64 is invalid.
+2024-01-16 22:32:02.737 [INFO]    kontroler API-a instanciran
+2024-01-16 22:32:02.786 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 22:32:02.787 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 22:32:02.789 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 22:32:02.790 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 22:32:02.827 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 22:32:02.827 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 22:32:02.828 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 22:36:06.561 [INFO]    kontroler API-a instanciran
+2024-01-16 22:46:40.508 [ERROR]   Error in Post: The parameter data type of UInt64 is invalid.
+2024-01-16 22:48:53.184 [INFO]    kontroler API-a instanciran
+2024-01-16 22:50:54.944 [INFO]    kontroler API-a instanciran
+2024-01-16 22:51:49.073 [INFO]    kontroler API-a instanciran
+2024-01-16 22:51:49.100 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 22:51:49.101 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 22:51:49.102 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 22:51:49.107 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 22:51:49.135 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 22:51:49.135 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 22:51:49.135 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 22:52:48.662 [INFO]    kontroler API-a instanciran
+2024-01-16 22:53:03.328 [INFO]    kontroler API-a instanciran
+2024-01-16 22:53:03.329 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 22:53:03.330 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 22:53:03.330 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 22:53:03.330 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 22:53:03.333 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 22:53:03.333 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 22:53:03.334 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 22:56:25.413 [INFO]    kontroler API-a instanciran
+2024-01-16 22:56:43.952 [INFO]    kontroler API-a instanciran
+2024-01-16 22:56:43.953 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 22:56:43.954 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 22:56:43.956 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 22:56:43.958 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 22:56:43.961 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 22:56:43.962 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 22:56:43.962 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 22:57:41.204 [INFO]    kontroler API-a instanciran
+2024-01-16 22:58:00.714 [INFO]    kontroler API-a instanciran
+2024-01-16 22:58:00.714 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 22:58:00.715 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 22:58:00.715 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 22:58:00.716 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 22:58:00.720 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 22:58:00.720 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 22:58:00.721 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 22:59:20.086 [INFO]    kontroler API-a instanciran
+2024-01-16 22:59:29.517 [INFO]    kontroler API-a instanciran
+2024-01-16 22:59:29.518 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 22:59:29.518 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 22:59:29.519 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 22:59:29.519 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 22:59:29.523 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 22:59:29.523 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 22:59:29.523 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 23:03:55.441 [INFO]    kontroler API-a instanciran
+2024-01-16 23:04:04.508 [INFO]    kontroler API-a instanciran
+2024-01-16 23:04:04.509 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 23:04:04.510 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 23:04:04.510 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 23:04:04.510 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 23:04:04.518 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 23:04:04.518 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 23:04:04.518 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-16 23:11:00.049 [INFO]    kontroler API-a instanciran
+2024-01-16 23:11:09.265 [INFO]    kontroler API-a instanciran
+2024-01-16 23:11:09.266 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-16 23:11:09.267 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-16 23:11:09.267 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-16 23:11:09.268 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-16 23:11:09.275 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-16 23:11:09.276 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-16 23:11:09.276 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 11:23:07.809 [INFO]    kontroler API-a instanciran
+2024-01-17 11:23:58.828 [INFO]    kontroler API-a instanciran
+2024-01-17 11:23:58.953 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 11:23:58.955 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 11:23:58.958 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 11:23:58.966 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 11:23:59.101 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 11:23:59.101 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 11:23:59.102 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 11:31:10.402 [INFO]    kontroler API-a instanciran
+2024-01-17 11:46:47.359 [INFO]    kontroler API-a instanciran
+2024-01-17 11:47:07.738 [INFO]    kontroler API-a instanciran
+2024-01-17 11:47:07.742 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 11:47:07.743 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 11:47:07.745 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 11:47:07.745 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 11:47:07.777 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 11:47:07.778 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 11:47:07.779 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 11:47:31.241 [INFO]    kontroler API-a instanciran
+2024-01-17 11:50:02.938 [INFO]    kontroler API-a instanciran
+2024-01-17 11:50:32.986 [INFO]    kontroler API-a instanciran
+2024-01-17 11:50:32.997 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 11:50:33.012 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 11:50:33.013 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 11:50:33.014 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 11:50:33.023 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 11:50:33.027 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 11:50:33.029 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 11:58:34.909 [INFO]    kontroler API-a instanciran
+2024-01-17 11:59:02.474 [INFO]    kontroler API-a instanciran
+2024-01-17 11:59:02.476 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 11:59:02.477 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 11:59:02.478 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 11:59:02.481 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 11:59:02.529 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 11:59:02.530 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 11:59:02.531 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 11:59:41.092 [INFO]    kontroler API-a instanciran
+2024-01-17 12:02:20.373 [INFO]    kontroler API-a instanciran
+2024-01-17 12:08:22.785 [INFO]    kontroler API-a instanciran
+2024-01-17 12:08:38.347 [INFO]    kontroler API-a instanciran
+2024-01-17 12:08:38.432 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 12:08:38.434 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 12:08:38.436 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 12:08:38.441 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 12:08:38.515 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 12:08:38.516 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 12:08:38.516 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 12:09:30.147 [INFO]    kontroler API-a instanciran
+2024-01-17 12:12:17.687 [INFO]    kontroler API-a instanciran
+2024-01-17 12:12:31.356 [INFO]    kontroler API-a instanciran
+2024-01-17 12:12:31.358 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 12:12:31.359 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 12:12:31.359 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 12:12:31.360 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 12:12:31.367 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 12:12:31.368 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 12:12:31.368 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 12:13:07.531 [INFO]    kontroler API-a instanciran
+2024-01-17 12:15:48.679 [INFO]    kontroler API-a instanciran
+2024-01-17 12:16:18.863 [ERROR]   Error in Post: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2024-01-17 12:16:32.354 [INFO]    kontroler API-a instanciran
+2024-01-17 12:16:32.356 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 12:16:32.357 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 12:16:32.359 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 12:16:32.360 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 12:16:32.383 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 12:16:32.391 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 12:16:32.402 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 12:17:35.353 [INFO]    kontroler API-a instanciran
+2024-01-17 12:20:18.159 [INFO]    kontroler API-a instanciran
+2024-01-17 12:20:48.278 [ERROR]   Error in Post: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2024-01-17 12:21:01.730 [INFO]    kontroler API-a instanciran
+2024-01-17 12:21:01.732 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 12:21:01.733 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 12:21:01.734 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 12:21:01.734 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 12:21:01.756 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 12:21:01.756 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 12:21:01.757 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 12:21:48.291 [INFO]    kontroler API-a instanciran
+2024-01-17 12:23:57.646 [INFO]    kontroler API-a instanciran
+2024-01-17 12:24:32.206 [ERROR]   Error in Post: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2024-01-17 12:24:56.253 [INFO]    kontroler API-a instanciran
+2024-01-17 12:24:56.323 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 12:24:56.324 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 12:24:56.326 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 12:24:56.331 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 12:24:56.428 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 12:24:56.430 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 12:24:56.431 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 12:25:26.965 [INFO]    kontroler API-a instanciran
+2024-01-17 12:26:20.652 [INFO]    kontroler API-a instanciran
+2024-01-17 12:29:51.811 [INFO]    kontroler API-a instanciran
+2024-01-17 12:32:32.269 [INFO]    kontroler API-a instanciran
+2024-01-17 15:36:14.392 [INFO]    kontroler API-a instanciran
+2024-01-17 15:36:46.380 [INFO]    kontroler API-a instanciran
+2024-01-17 15:43:24.083 [INFO]    kontroler API-a instanciran
+2024-01-17 15:43:55.943 [INFO]    kontroler API-a instanciran
+2024-01-17 15:43:56.024 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 15:43:56.025 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 15:43:56.037 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 15:43:56.042 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 15:43:56.108 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 15:43:56.109 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 15:43:56.109 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 15:44:25.368 [INFO]    kontroler API-a instanciran
+2024-01-17 15:46:24.782 [INFO]    kontroler API-a instanciran
+2024-01-17 15:46:48.914 [INFO]    kontroler API-a instanciran
+2024-01-17 15:53:56.323 [INFO]    kontroler API-a instanciran
+2024-01-17 15:54:33.557 [INFO]    kontroler API-a instanciran
+2024-01-17 15:54:33.663 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 15:54:33.664 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 15:54:33.667 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 15:54:33.671 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 15:54:33.726 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 15:54:33.726 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 15:54:33.727 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 15:56:08.092 [INFO]    kontroler API-a instanciran
+2024-01-17 15:57:16.731 [INFO]    kontroler API-a instanciran
+2024-01-17 15:57:37.521 [INFO]    kontroler API-a instanciran
+2024-01-17 15:57:37.525 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 15:57:37.528 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 15:57:37.533 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 15:57:37.535 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 15:57:37.551 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 15:57:37.553 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 15:57:37.554 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 15:58:20.135 [INFO]    kontroler API-a instanciran
+2024-01-17 16:04:54.550 [INFO]    kontroler API-a instanciran
+2024-01-17 16:05:09.157 [INFO]    kontroler API-a instanciran
+2024-01-17 16:05:09.162 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 16:05:09.163 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 16:05:09.168 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 16:05:09.169 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 16:05:09.243 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 16:05:09.253 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 16:05:09.254 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 16:06:31.442 [INFO]    kontroler API-a instanciran
+2024-01-17 16:07:06.898 [INFO]    kontroler API-a instanciran
+2024-01-17 21:32:16.339 [INFO]    kontroler API-a instanciran
+2024-01-17 21:32:22.842 [INFO]    kontroler API-a instanciran
+2024-01-17 21:32:22.873 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:32:22.873 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:32:22.880 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:32:22.882 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:32:22.922 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:32:22.922 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:32:22.924 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 21:33:07.972 [INFO]    kontroler API-a instanciran
+2024-01-17 21:33:26.836 [INFO]    kontroler API-a instanciran
+2024-01-17 21:38:18.677 [INFO]    kontroler API-a instanciran
+2024-01-17 21:38:24.565 [INFO]    kontroler API-a instanciran
+2024-01-17 21:38:24.566 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:38:24.567 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:38:24.567 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:38:24.567 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:38:24.577 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:38:24.577 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:38:24.577 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 21:42:10.352 [INFO]    kontroler API-a instanciran
+2024-01-17 21:42:40.483 [ERROR]   Error in Post: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+2024-01-17 21:44:01.277 [INFO]    kontroler API-a instanciran
+2024-01-17 21:44:01.279 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:44:01.283 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:44:01.283 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:44:01.284 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:44:01.294 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:44:01.294 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:44:01.294 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 21:47:14.356 [INFO]    kontroler API-a instanciran
+2024-01-17 21:47:19.259 [INFO]    kontroler API-a instanciran
+2024-01-17 21:47:19.260 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:47:19.260 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:47:19.261 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:47:19.261 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:47:19.280 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:47:19.280 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:47:19.280 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 21:55:30.041 [INFO]    kontroler API-a instanciran
+2024-01-17 21:55:39.355 [INFO]    kontroler API-a instanciran
+2024-01-17 21:55:39.356 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:55:39.356 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:55:39.357 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:55:39.358 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:55:39.369 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:55:39.370 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:55:39.370 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 21:56:34.436 [INFO]    kontroler API-a instanciran
+2024-01-17 21:56:38.613 [INFO]    kontroler API-a instanciran
+2024-01-17 21:56:38.614 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:56:38.614 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:56:38.615 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:56:38.615 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:56:38.621 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:56:38.623 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:56:38.623 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 21:58:47.341 [INFO]    kontroler API-a instanciran
+2024-01-17 21:58:52.612 [INFO]    kontroler API-a instanciran
+2024-01-17 21:58:52.612 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 21:58:52.612 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 21:58:52.613 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 21:58:52.613 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 21:58:52.615 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 21:58:52.616 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 21:58:52.616 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:01:55.878 [INFO]    kontroler API-a instanciran
+2024-01-17 22:02:00.390 [INFO]    kontroler API-a instanciran
+2024-01-17 22:02:00.390 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:02:00.391 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:02:00.396 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:02:00.397 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:02:00.401 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:02:00.402 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:02:00.402 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:04:39.821 [INFO]    kontroler API-a instanciran
+2024-01-17 22:04:45.092 [INFO]    kontroler API-a instanciran
+2024-01-17 22:04:45.092 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:04:45.092 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:04:45.093 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:04:45.093 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:04:45.097 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:04:45.097 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:04:45.097 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:06:06.366 [INFO]    kontroler API-a instanciran
+2024-01-17 22:06:10.799 [INFO]    kontroler API-a instanciran
+2024-01-17 22:06:10.799 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:06:10.800 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:06:10.800 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:06:10.800 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:06:10.804 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:06:10.804 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:06:10.805 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:11:04.076 [INFO]    kontroler API-a instanciran
+2024-01-17 22:11:10.085 [INFO]    kontroler API-a instanciran
+2024-01-17 22:11:10.086 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:11:10.087 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:11:10.087 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:11:10.088 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:11:10.100 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:11:10.102 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:11:10.102 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:15:39.837 [INFO]    kontroler API-a instanciran
+2024-01-17 22:15:44.779 [INFO]    kontroler API-a instanciran
+2024-01-17 22:15:44.780 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:15:44.780 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:15:44.783 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:15:44.785 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:15:44.788 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:15:44.788 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:15:44.788 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:22:16.102 [INFO]    kontroler API-a instanciran
+2024-01-17 22:22:19.966 [INFO]    kontroler API-a instanciran
+2024-01-17 22:22:19.967 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:22:19.968 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:22:19.968 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:22:19.969 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:22:19.977 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:22:19.977 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:22:19.977 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:25:13.706 [INFO]    kontroler API-a instanciran
+2024-01-17 22:25:17.344 [INFO]    kontroler API-a instanciran
+2024-01-17 22:25:17.345 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:25:17.345 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:25:17.346 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:25:17.347 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:25:17.357 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:25:17.359 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:25:17.359 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:26:43.382 [INFO]    kontroler API-a instanciran
+2024-01-17 22:26:48.297 [INFO]    kontroler API-a instanciran
+2024-01-17 22:26:48.297 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:26:48.297 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:26:48.298 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:26:48.298 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:26:48.302 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:26:48.302 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:26:48.303 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:27:47.062 [INFO]    kontroler API-a instanciran
+2024-01-17 22:29:48.694 [INFO]    kontroler API-a instanciran
+2024-01-17 22:30:02.327 [INFO]    kontroler API-a instanciran
+2024-01-17 22:30:02.328 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:30:02.328 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:30:02.328 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:30:02.329 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:30:02.337 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:30:02.337 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:30:02.337 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:33:59.262 [INFO]    kontroler API-a instanciran
+2024-01-17 22:34:07.586 [INFO]    kontroler API-a instanciran
+2024-01-17 22:34:07.603 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-17 22:34:07.604 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-17 22:34:07.605 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-17 22:34:07.606 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-17 22:34:07.628 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-17 22:34:07.628 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-17 22:34:07.628 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-17 22:35:26.274 [INFO]    kontroler API-a instanciran
+2024-01-17 22:35:57.271 [INFO]    kontroler API-a instanciran
+2024-01-18 09:40:27.057 [INFO]    kontroler API-a instanciran
+2024-01-18 09:40:52.333 [INFO]    kontroler API-a instanciran
+2024-01-18 09:40:52.376 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-01-18 09:40:52.377 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-01-18 09:40:52.379 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-01-18 09:40:52.390 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-01-18 09:40:52.429 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-01-18 09:40:52.430 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-01-18 09:40:52.430 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-01-18 09:41:55.212 [INFO]    kontroler API-a instanciran
+2024-01-18 09:44:01.289 [INFO]    kontroler API-a instanciran
+2024-02-12 21:19:55.303 [INFO]    kontroler API-a instanciran
+2024-02-12 21:19:56.673 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-02-12 21:19:56.775 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-02-12 21:19:58.365 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-02-12 21:19:58.397 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-02-12 21:19:58.735 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-02-12 21:19:58.738 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-02-12 21:19:58.754 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-02-29 20:30:59.387 [INFO]    kontroler API-a instanciran
+2024-02-29 20:37:09.930 [INFO]    kontroler API-a instanciran
+2024-02-29 20:38:07.273 [INFO]    kontroler API-a instanciran
+2024-02-29 20:38:07.358 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-02-29 20:38:07.359 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-02-29 20:38:07.363 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-02-29 20:38:07.386 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-02-29 20:38:07.543 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-02-29 20:38:07.545 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-02-29 20:38:07.545 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-04 09:50:02.672 [INFO]    kontroler API-a instanciran
+2024-03-04 13:24:06.591 [INFO]    kontroler API-a instanciran
+2024-03-04 13:30:46.187 [INFO]    kontroler API-a instanciran
+2024-03-04 13:30:46.253 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-04 13:30:46.254 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-04 13:30:46.259 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-04 13:30:46.266 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-04 13:30:46.354 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-04 13:30:46.355 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-04 13:30:46.356 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-04 23:30:16.138 [INFO]    kontroler API-a instanciran
+2024-03-04 23:30:31.279 [INFO]    kontroler API-a instanciran
+2024-03-04 23:30:31.378 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-04 23:30:31.380 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-04 23:30:31.384 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-04 23:30:31.391 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-04 23:30:31.494 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-04 23:30:31.496 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-04 23:30:31.497 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-05 09:54:44.406 [INFO]    kontroler API-a instanciran
+2024-03-05 09:54:59.480 [ERROR]   Error in Post: Incorrect syntax near ')'.
+2024-03-05 09:57:46.224 [INFO]    kontroler API-a instanciran
+2024-03-05 09:58:09.544 [ERROR]   Error in Post: Incorrect syntax near ')'.
+2024-03-05 09:58:42.830 [INFO]    kontroler API-a instanciran
+2024-03-06 09:56:40.897 [INFO]    kontroler API-a instanciran
+2024-03-06 09:56:50.205 [INFO]    kontroler API-a instanciran
+2024-03-06 09:56:50.636 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 09:56:50.662 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 09:56:51.149 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 09:56:51.155 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 09:56:51.270 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 09:56:51.271 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 09:56:51.275 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 10:20:20.194 [INFO]    kontroler API-a instanciran
+2024-03-06 10:20:27.022 [INFO]    kontroler API-a instanciran
+2024-03-06 10:21:00.571 [INFO]    kontroler API-a instanciran
+2024-03-06 10:21:47.829 [INFO]    kontroler API-a instanciran
+2024-03-06 10:29:22.621 [INFO]    kontroler API-a instanciran
+2024-03-06 10:29:49.095 [INFO]    kontroler API-a instanciran
+2024-03-06 10:29:49.098 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 10:29:49.100 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 10:29:49.103 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 10:29:49.104 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 10:29:49.126 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 10:29:49.131 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 10:29:49.132 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 10:33:56.548 [INFO]    kontroler API-a instanciran
+2024-03-06 10:34:23.190 [INFO]    kontroler API-a instanciran
+2024-03-06 10:34:23.192 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 10:34:23.193 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 10:34:23.193 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 10:34:23.194 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 10:34:23.287 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 10:34:23.288 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 10:34:23.289 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 10:39:20.489 [INFO]    kontroler API-a instanciran
+2024-03-06 10:39:38.346 [INFO]    kontroler API-a instanciran
+2024-03-06 10:39:38.355 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 10:39:38.356 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 10:39:38.379 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 10:39:38.380 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 10:39:38.394 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 10:39:38.395 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 10:39:38.396 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 10:41:33.976 [INFO]    kontroler API-a instanciran
+2024-03-06 10:41:37.621 [INFO]    kontroler API-a instanciran
+2024-03-06 10:41:54.657 [INFO]    kontroler API-a instanciran
+2024-03-06 10:44:24.966 [INFO]    kontroler API-a instanciran
+2024-03-06 10:44:46.428 [INFO]    kontroler API-a instanciran
+2024-03-06 10:44:46.432 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 10:44:46.435 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 10:44:46.437 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 10:44:46.439 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 10:44:46.456 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 10:44:46.457 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 10:44:46.458 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 10:44:58.450 [INFO]    kontroler API-a instanciran
+2024-03-06 10:45:02.722 [INFO]    kontroler API-a instanciran
+2024-03-06 10:45:12.860 [INFO]    kontroler API-a instanciran
+2024-03-06 12:59:54.264 [INFO]    kontroler API-a instanciran
+2024-03-06 12:59:54.270 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 12:59:54.272 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 12:59:54.295 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 12:59:54.296 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 12:59:54.318 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 12:59:54.319 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 12:59:54.320 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 13:00:06.927 [INFO]    kontroler API-a instanciran
+2024-03-06 13:00:09.934 [INFO]    kontroler API-a instanciran
+2024-03-06 13:00:21.583 [INFO]    kontroler API-a instanciran
+2024-03-06 13:01:10.038 [INFO]    kontroler API-a instanciran
+2024-03-06 13:03:20.336 [INFO]    kontroler API-a instanciran
+2024-03-06 13:03:20.337 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 13:03:20.338 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 13:03:20.343 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 13:03:20.348 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 13:03:20.361 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 13:03:20.362 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 13:03:20.362 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 13:03:37.287 [INFO]    kontroler API-a instanciran
+2024-03-06 13:03:41.446 [INFO]    kontroler API-a instanciran
+2024-03-06 13:03:57.749 [INFO]    kontroler API-a instanciran
+2024-03-06 13:05:05.378 [INFO]    kontroler API-a instanciran
+2024-03-06 13:10:35.815 [INFO]    kontroler API-a instanciran
+2024-03-06 13:19:18.487 [INFO]    kontroler API-a instanciran
+2024-03-06 13:26:58.463 [INFO]    kontroler API-a instanciran
+2024-03-06 13:34:43.170 [INFO]    kontroler API-a instanciran
+2024-03-06 13:43:46.477 [INFO]    kontroler API-a instanciran
+2024-03-06 13:43:54.677 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 13:43:54.679 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 13:43:54.692 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 13:43:54.702 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 13:43:54.741 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 13:43:54.741 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 13:43:54.742 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 13:44:00.630 [INFO]    kontroler API-a instanciran
+2024-03-06 13:44:04.451 [INFO]    kontroler API-a instanciran
+2024-03-06 13:44:24.643 [INFO]    kontroler API-a instanciran
+2024-03-06 13:44:42.122 [INFO]    kontroler API-a instanciran
+2024-03-06 13:47:44.999 [INFO]    kontroler API-a instanciran
+2024-03-06 13:47:44.999 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 13:47:45.000 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 13:47:45.000 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 13:47:45.000 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 13:47:45.013 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 13:47:45.014 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 13:47:45.014 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 13:47:52.179 [INFO]    kontroler API-a instanciran
+2024-03-06 13:47:54.989 [INFO]    kontroler API-a instanciran
+2024-03-06 13:47:57.262 [INFO]    kontroler API-a instanciran
+2024-03-06 13:56:56.697 [INFO]    kontroler API-a instanciran
+2024-03-06 13:56:56.698 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 13:56:56.699 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 13:56:56.709 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 13:56:56.710 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 13:56:56.719 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 13:56:56.720 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 13:56:56.721 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 13:57:11.032 [INFO]    kontroler API-a instanciran
+2024-03-06 13:57:13.249 [INFO]    kontroler API-a instanciran
+2024-03-06 13:57:14.551 [INFO]    kontroler API-a instanciran
+2024-03-06 13:57:32.348 [INFO]    kontroler API-a instanciran
+2024-03-06 14:00:32.866 [INFO]    kontroler API-a instanciran
+2024-03-06 14:00:32.867 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 14:00:32.868 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 14:00:32.871 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 14:00:32.872 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 14:00:32.885 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 14:00:32.889 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 14:00:32.889 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 14:00:41.295 [INFO]    kontroler API-a instanciran
+2024-03-06 14:00:43.744 [INFO]    kontroler API-a instanciran
+2024-03-06 14:00:46.884 [INFO]    kontroler API-a instanciran
+2024-03-06 14:02:06.747 [INFO]    kontroler API-a instanciran
+2024-03-06 14:02:06.747 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 14:02:06.747 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 14:02:06.748 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 14:02:06.748 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 14:02:06.755 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 14:02:06.756 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 14:02:06.756 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 14:02:13.533 [INFO]    kontroler API-a instanciran
+2024-03-06 14:02:16.564 [INFO]    kontroler API-a instanciran
+2024-03-06 14:02:18.795 [INFO]    kontroler API-a instanciran
+2024-03-06 14:02:37.030 [INFO]    kontroler API-a instanciran
+2024-03-06 14:15:45.548 [INFO]    kontroler API-a instanciran
+2024-03-06 14:15:45.550 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 14:15:45.550 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 14:15:45.568 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 14:15:45.568 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 14:15:45.576 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 14:15:45.576 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 14:15:45.576 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 14:15:51.539 [INFO]    kontroler API-a instanciran
+2024-03-06 14:15:54.046 [INFO]    kontroler API-a instanciran
+2024-03-06 14:15:55.435 [INFO]    kontroler API-a instanciran
+2024-03-06 14:16:11.600 [INFO]    kontroler API-a instanciran
+2024-03-06 14:18:20.889 [INFO]    kontroler API-a instanciran
+2024-03-06 14:18:20.890 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-06 14:18:20.891 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-06 14:18:20.892 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-06 14:18:20.893 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-06 14:18:20.905 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-06 14:18:20.905 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-06 14:18:20.906 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-06 14:18:27.259 [INFO]    kontroler API-a instanciran
+2024-03-06 14:18:29.918 [INFO]    kontroler API-a instanciran
+2024-03-06 14:18:31.332 [INFO]    kontroler API-a instanciran
+2024-03-06 14:18:51.840 [INFO]    kontroler API-a instanciran
+2024-03-07 13:11:02.231 [INFO]    kontroler API-a instanciran
+2024-03-07 13:11:02.756 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-07 13:11:02.783 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-07 13:11:03.253 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-07 13:11:03.257 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-07 13:11:03.360 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-07 13:11:03.363 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-07 13:11:03.368 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-07 13:11:11.289 [INFO]    kontroler API-a instanciran
+2024-03-07 13:11:14.867 [INFO]    kontroler API-a instanciran
+2024-03-07 13:11:37.228 [INFO]    kontroler API-a instanciran
+2024-03-07 13:21:19.787 [INFO]    kontroler API-a instanciran
+2024-03-07 13:21:19.788 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-07 13:21:19.789 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-07 13:21:19.798 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-07 13:21:19.799 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-07 13:21:19.805 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-07 13:21:19.805 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-07 13:21:19.805 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-07 13:21:28.208 [INFO]    kontroler API-a instanciran
+2024-03-07 13:21:31.035 [INFO]    kontroler API-a instanciran
+2024-03-07 13:21:33.153 [INFO]    kontroler API-a instanciran
+2024-03-07 13:21:49.401 [INFO]    kontroler API-a instanciran
+2024-03-07 13:22:13.888 [INFO]    kontroler API-a instanciran
+2024-03-09 19:17:14.760 [INFO]    kontroler API-a instanciran
+2024-03-09 19:17:15.632 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-03-09 19:17:15.688 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-03-09 19:17:16.627 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-03-09 19:17:16.638 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-03-09 19:17:16.794 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-03-09 19:17:16.795 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-03-09 19:17:16.804 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-03-09 19:17:31.274 [INFO]    kontroler API-a instanciran
+2024-03-09 19:17:35.767 [INFO]    kontroler API-a instanciran
+2024-03-09 19:17:38.142 [INFO]    kontroler API-a instanciran
+2024-06-16 17:04:56.440 [INFO]    kontroler API-a instanciran
+2024-06-16 17:04:57.405 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-06-16 17:04:57.459 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-06-16 17:04:58.805 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-06-16 17:04:58.820 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-06-16 17:04:59.012 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-06-16 17:04:59.013 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-06-16 17:04:59.022 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA
+2024-06-16 17:09:52.501 [INFO]    kontroler API-a instanciran
+2024-06-16 17:09:52.784 [INFO]    DajKorisnika pozvan sa ime: Bojana lozina: 2111
+2024-06-16 17:09:59.019 [INFO]    Pokušaj otvaranja veze sa bazom podataka
+2024-06-16 17:10:03.887 [INFO]    Veza sa bazom podataka je uspešno otvorena
+2024-06-16 17:10:08.693 [DEBUG]   Izvršena SQL komanda: select * From Korisnik Where Korisnik=Bojana and Lozinka=2111
+2024-06-16 17:10:12.182 [INFO]    SQL komanda izvršena.  pronađenih redova: 1
+2024-06-16 17:10:26.199 [INFO]    Zatvorena konekcija sa bazom podataka
+2024-06-16 17:10:26.220 [INFO]    Post metoda uspešno izvršena vraćen odgovor=DA

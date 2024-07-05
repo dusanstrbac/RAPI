@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Bobana\Desktop\Rapi1</_PublishTargetUrl>
+    <History>True|2024-01-12T13:08:35.1869846Z;False|2024-01-12T10:57:50.5327601+01:00;True|2024-01-11T11:43:26.6855342+01:00;True|2024-01-11T09:23:24.9078447+01:00;True|2024-01-11T08:34:56.3254413+01:00;True|2024-01-11T08:09:24.9727674+01:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=BOBANAS%3bInitial Catalog=NexTBIZZCUE%3bIntegrated Security=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
